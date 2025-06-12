@@ -19,3 +19,4 @@ for word in words_split:
     else:
         result.append(word)
 print(' '.join(result))
+#anchind aishk is micong omfr waall
