@@ -13,3 +13,4 @@ for word in words_split:
         result.append(word)
 replaced=' '.join(result)
 print(replaced)
+#anchind aishk is micong omfr waall
