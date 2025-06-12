@@ -10,3 +10,4 @@ for word in word_list:
         replaced.append(word)
 result = ' '.join(replaced)
 print(result)
+#ahcndni ahsik is mocing orfm wlaal
