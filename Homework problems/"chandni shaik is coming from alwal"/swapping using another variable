@@ -1,0 +1,17 @@
+words = "chandni shaik is coming from alwal"
+words_split = words.split()
+result = []
+for word in words_split:
+    if len(word) > 3:
+        c = list(word)
+        for i in (0, 1, 4):
+            j = i + 2
+            if j < len(c):
+                temp = c[i]
+                c[i] = c[j]
+                c[j] = temp
+        result.append(''.join(c))
+    else:
+        result.append(word)
+replaced = ' '.join(result)
+print(replaced)
