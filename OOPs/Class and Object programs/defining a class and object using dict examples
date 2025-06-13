@@ -29,7 +29,13 @@ class Dictionary:
         
 Pro = Dictionary()
 Pro.create_dict({"name": "Chandni", "city": "Hyderabad"})
-Pro.add_key_value("email", "chandni@example.com")
+Pro.add_key_value("email", "chandni614ece@gmail.com")
 Pro.delete_key("city")
 Pro.remove_key("email")
 Pro.show_dict()
+
+# Dictionary Created: {'name': 'Chandni', 'city': 'Hyderabad'}
+# Added (email: chandni614ece@gmail.com) to dictionary.
+# Deleted key 'city' from dictionary.
+# Removed key 'email' with value 'chandni614ece@gmail.com'.
+# Current Dictionary: {'name': 'Chandni'}
