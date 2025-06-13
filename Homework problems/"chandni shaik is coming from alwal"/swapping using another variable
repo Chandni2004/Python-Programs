@@ -4,8 +4,8 @@ result = []
 for word in words_split:
     if len(word) > 3:
         c = list(word)
-        for i in (0, 1, 4):
-            j = i + 2
+        swap=[(0,2),(1,3),(4,6)]
+        for i,j in swap:
             if j < len(c):
                 temp = c[i]
                 c[i] = c[j]
@@ -13,5 +13,4 @@ for word in words_split:
         result.append(''.join(c))
     else:
         result.append(word)
-replaced = ' '.join(result)
-print(replaced)
+print(' '.join(result))
