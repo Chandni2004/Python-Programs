@@ -4,3 +4,5 @@ shallow=copy.copy(list1)
 shallow[0][0]=9
 print(list1)
 print(shallow)
+# [[9, 2], [3, 4]]
+# [[9, 2], [3, 4]]
