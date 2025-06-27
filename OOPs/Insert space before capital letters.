@@ -1,0 +1,22 @@
+class Capital:
+    def __init__(self, text):
+        if isinstance(text, Capital):
+            self._text = text._text
+        else:
+            self._text = text 
+    def __del__(self):
+        print(f"Destructor called. Capital with text '{self._text}' is destroyed.")
+class Splitter(Capital):
+    def splitted(self):
+        result = ""
+        for ch in self._text: 
+            if ch.isupper():
+                result += " " + ch
+            else:
+                result += ch
+        print(result.strip())
+text = "PythonProgramming"
+obj1 = Splitter(text)
+obj1.splitted()
+obj2 = Splitter(obj1)
+obj2.splitted()
