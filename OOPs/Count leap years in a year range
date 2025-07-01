@@ -1,7 +1,7 @@
 class str_class:
     def __init__(self,leap=None):
      if isinstance(leap,str_class):
-            self.leap = text.leap
+            self.leap = leap.leap
      else:
          self.leap = leap
 class subclass(str_class):
