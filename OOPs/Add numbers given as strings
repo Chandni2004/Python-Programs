@@ -1,21 +1,17 @@
 class StringNumberSum:
-    def _init_(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
-
+    def __init__(self, num1=None, num2=None):
+        if isinstance(num1, StringNumberSum):
+            self.num1 = num1.num1
+            self.num2 = num1.num2
+        else:
+            self.num1=num1
+            self.num2=num2
+   
+class StringNumberSumCopy(StringNumberSum):
     def get_sum(self):
         return str(int(self.num1) + int(self.num2))
-
-# Subclass
-class StringNumberSumCopy(StringNumberSum):
-    def _init_(self, original_obj):
-        # Use copy constructor logic by calling base class constructor
-        if isinstance(original_obj, StringNumberSum):
-            super()._init_(original_obj.num1, original_obj.num2)
-        else:
-            raise TypeError("Expected a StringNumberSum object for copying")
-
-obj1 = StringNumberSum("234242342341", "2432342342")
+        
+obj1 = StringNumberSumCopy("234242342341", "2432342342")
 print("Sum from obj1:", obj1.get_sum())  # Output: 236674684683
 
 obj2 = StringNumberSumCopy(obj1)
