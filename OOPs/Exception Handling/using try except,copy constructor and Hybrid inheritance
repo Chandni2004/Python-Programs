@@ -80,43 +80,62 @@ class HashNonVowels(LeapYear,Capitalize):
 print("Sorted Words:")
 obj1 = SortText("Red Green Black White Pink")
 obj1.sort_words()
+copy_obj1=SortText(obj1)
+copy_obj1.sort_words()
 
 print("\nExtracted Name from Email:")
 obj2 = EmailName("chandniece614@gmail.com")
 obj2.extract_name()
+copy_obj2=EmailName(obj2)
+copy_obj2.extract_name()
 
 print("\nLeap Years:")
 obj3 = LeapYear("1990-2000")
 obj3.count_leap_years()
+copy_obj3=LeapYear(obj3)
+copy_obj3.count_leap_years()
 
 print("\nCapitalized Words:")
 obj4 = Capitalize("red green WHITE")
 obj4.capitalize_words()
+copy_obj4=Capitalize(obj4)
+copy_obj4.capitalize_words()
 
 print("\nAdd Numeric Strings:")
 obj5 = StringAdder("12345", "67890")
 obj5.add_strings()
+copy_obj5=StringAdder(obj5)
+copy_obj5.add_strings()
 
 print("\nHash Non-Vowels:")
 obj6 = HashNonVowels("Green")
 obj6.add_hash()
+copy_obj6=HashNonVowels(obj6)
+copy_obj6.add_hash()
 
 # Output:
 # Sorted Words:
 # Sorted Words: ['Black', 'Green', 'Pink', 'Red', 'White']
+# Sorted Words: ['Black', 'Green', 'Pink', 'Red', 'White']
 
 # Extracted Name from Email:
+# Extracted Name: chandniece614
 # Extracted Name: chandniece614
 
 # Leap Years:
 # 1992 1996 2000 
 # Total Leap Years: 3
+# 1992 1996 2000 
+# Total Leap Years: 3
 
 # Capitalized Words:
+# Capitalized: Red Green White
 # Capitalized: Red Green White
 
 # Add Numeric Strings:
 # Sum: 80235
+# Sum: 80235
 
 # Hash Non-Vowels:
+# With Hashes: -G--r-ee-n-
 # With Hashes: -G--r-ee-n-
