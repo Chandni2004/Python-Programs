@@ -131,3 +131,29 @@ obj6.add_hash()
 copy_obj6 = HashNonVowels(obj6)
 copy_obj6.add_hash()
 
+# Output:
+# Sorted Words:
+# Sorted Words: ['Black', 'Green', 'Pink', 'Red', 'White']
+# Sorted Words: ['Black', 'Green', 'Pink', 'Red', 'White']
+
+# Extracted Name from Email:
+# Extracted Name: chandniece614
+# Extracted Name: chandniece614
+
+# Leap Years:
+# 1992 1996 2000 
+# Total Leap Years: 3
+# 1992 1996 2000 
+# Total Leap Years: 3
+
+# Capitalized Words:
+# Capitalized: Red Green White
+# Capitalized: Red Green White
+
+# Add Numeric Strings:
+# Sum: 80235
+# Sum: 80235
+
+# Hash Non-Vowels:
+# With Hashes: -G--r-ee-n-
+# With Hashes: -G--r-ee-n-
