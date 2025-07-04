@@ -13,7 +13,6 @@ class Person:
     def show_person(self):
         print(self.name, self.age, self.gender)
 
-
 class Academic_info(Person):
     def __init__(self, grades_dict,name, age, gender):
         super().__init__(name,age,gender)
@@ -21,7 +20,6 @@ class Academic_info(Person):
             self.grades_dict = grades_dict.grades_dict
         else:
             self.grades_dict = grades_dict
-
 
     def calculate_average_mro(self):
         try:
@@ -34,7 +32,6 @@ class Academic_info(Person):
                 print(f'{self.name} have failed with the grade of {total_av_marks}')
         except Exception as e:
             print(e)
-
 
 class contact_info(Person):
     def __init__(self,name, age, gender,email=None,phone_num=None):
@@ -49,7 +46,6 @@ class contact_info(Person):
     def calculate_average_mro(self):
         print(self.email,self.phone_num)
 
-
 class student(Academic_info,contact_info):
     def __init__(self, name=None, age=None, gender=None, grades_dict=None, email=None, phone_num=None):
         if isinstance(name,student):
@@ -63,7 +59,6 @@ class student(Academic_info,contact_info):
         self.calculate_average_mro()
         contact_info.calculate_average_mro(self)
         self.show_person()
-
 
 student1 = student(name="vicky",age=20,gender='female',grades_dict={'sub1':85,'sub2':85,'sub3':90,'sub4':90,'sub5':90},email='dusivicky@gmail.com',phone_num='7670949175')
 student1.show_result()
